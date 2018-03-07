@@ -17,37 +17,19 @@
 PRODUCT_PROPERTY_OVERRIDES :=
 
 PRODUCT_PACKAGES := \
-	ApiDemos \
-	CellBroadcastReceiver \
-	CubeLiveWallpapers \
 	CustomLocale \
 	Development \
 	Dialer \
-	EmulatorSmokeTests \
-	Gallery2 \
 	GestureBuilder \
-	Launcher3 \
-	Camera2 \
 	librs_jni \
-	libwnndict \
-	libWnnEngDic \
-	libWnnJpnDic \
-	LiveWallpapersPicker \
 	Mms \
-	Music \
-	OpenWnn \
-	Protips \
 	rild \
 	screenrecord \
 	SdkSetup \
-	SmokeTest \
-	SmokeTestApp \
 	SoftKeyboard \
 	sqlite3 \
 	SystemUI \
 	SysuiDarkThemeOverlay \
-	EasterEgg \
-	WallpaperPicker \
 	WidgetPreview
 
 # Define the host tools and libs that are parts of the SDK.
@@ -115,72 +97,8 @@ $(call inherit-product-if-exists, frameworks/base/data/keyboards/keyboards.mk)
 $(call inherit-product-if-exists, frameworks/webview/chromium/chromium.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core.mk)
 
-# include available languages for TTS in the system image
--include external/svox/pico/lang/PicoLangDeDeInSystem.mk
--include external/svox/pico/lang/PicoLangEnGBInSystem.mk
--include external/svox/pico/lang/PicoLangEnUsInSystem.mk
--include external/svox/pico/lang/PicoLangEsEsInSystem.mk
--include external/svox/pico/lang/PicoLangFrFrInSystem.mk
--include external/svox/pico/lang/PicoLangItItInSystem.mk
-
 # locale. en_US is both first and in alphabetical order to
 # ensure this is the default locale.
 PRODUCT_LOCALES := \
 	en_US \
-	ar_EG \
-	ar_IL \
-	bg_BG \
-	ca_ES \
-	cs_CZ \
-	da_DK \
-	de_AT \
-	de_CH \
-	de_DE \
-	de_LI \
-	el_GR \
-	en_AU \
-	en_CA \
-	en_GB \
-	en_IE \
-	en_IN \
-	en_NZ \
-	en_SG \
-	en_US \
-	en_ZA \
-	es_ES \
-	es_US \
-	fi_FI \
-	fr_BE \
-	fr_CA \
-	fr_CH \
-	fr_FR \
-	he_IL \
-	hi_IN \
-	hr_HR \
-	hu_HU \
-	id_ID \
-	it_CH \
-	it_IT \
-	ja_JP \
-	ko_KR \
-	lt_LT \
-	lv_LV \
-	nb_NO \
-	nl_BE \
-	nl_NL \
-	pl_PL \
-	pt_BR \
-	pt_PT \
-	ro_RO \
-	ru_RU \
-	sk_SK \
-	sl_SI \
-	sr_RS \
-	sv_SE \
-	th_TH \
-	tl_PH \
-	tr_TR \
-	uk_UA \
-	vi_VN \
-	zh_CN \
-	zh_TW
+	bg_BG
