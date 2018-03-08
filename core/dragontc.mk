@@ -25,7 +25,9 @@ BLUETOOTH := libbluetooth_jni bluetooth.mapsapi bluetooth.default bluetooth.maps
 DISABLE_DTC_arm :=
 DISABLE_DTC_arm64 := libdng_sdk libdng% libjni_filtershow_filters busybox libfdlibm libhistory% sensorservice libwfds libsensorservice  \
 			libv8base libhevcdec libjni_eglfence% libjni_jpegstream% libjni_gallery_filters% libblasV8 libF77blasV8 \
-			libF77blas libbnnmlowpV8 libplatformprotos libGLES_android
+			libF77blas libbnnmlowpV8 libplatformprotos libGLES_android \
+			libjni_imageutil libjni_snapcammosaic \
+			libstagefright
 
 # Set DISABLE_DTC based on arch
 DISABLE_DTC := \
@@ -87,7 +89,8 @@ DISABLE_POLLY_arm64 := \
   libjpeg_static libicuuc libwebp-decode libwebp-encode libpdfiumfxge libskia_static libaudioutils libpdfium% libLLVMSupport libsvoxpico \
   libRS_internal libvpx libopus libv8 libsonic libaudioflinger libstagefright% libFFTEm libRSCpuRef libbnnmlowp libmedia_jni libFraunhoferAAC \
   libavcdec libavcenc libmpeg2dec libwebrtc% libmusicbundle libreverb libscrypt_static libmpeg2dec libcrypto_static libcrypto libyuv% \
-  libjni_gallery_filters% libjni_gallery_filters_32 libLLVMSelectionDAG
+  libjni_gallery_filters% libjni_gallery_filters_32 libLLVMSelectionDAG \
+  libntfs-3g
 
 # Set DISABLE_POLLY based on arch
 DISABLE_POLLY := \
